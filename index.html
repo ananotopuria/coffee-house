@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Coffee House</title>
+  </head>
+  <body>
+    <header class="container header">
+      <a href="#">
+        <img src="assets/logo.png" class="logo" alt="Coffee house logo" />
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-list">
+          <li>
+            <a class="main-navigation-link" href="#">Favourite coffee</a>
+          </li>
+          <li>
+            <a class="main-navigation-link" href="#">About</a>
+          </li>
+          <li>
+            <a class="main-navigation-link" href="#">Mobile app</a>
+          </li>
+          <li>
+            <a class="main-navigation-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="nav-menu-btn main-navigation-link" href="#"
+        >Menu&nbsp;&nbsp;<img
+          class="coffee-icon"
+          src="assets/coffee-cup.png"
+          alt="icon"
+      /></a>
+    </header>
+    <main class="container">
+      <section class="section-hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>Enjoy</span> premium coffee at our charming cafe
+          </h1>
+          <p class="hero-txt">
+            With its inviting atmosphere and delicious coffee options, the
+            Coffee House Resource is a popular destination for coffee lovers and
+            those seeking a warm and inviting space to enjoy their favorite
+            beverage.
+          </p>
+          <a class="hero-menu-btn main-navigation-link" href="#">Menu</a>
+        </div>
+      </section>
+      <section class="favorite">
+        <h2 class="favorite-title">Choose your <span>favorite</span> coffee</h2>
+        <div class="favorite__slider">
+          <div class="favorite__slider--slide slide--1">
+            <img
+              class="coffee-image"
+              src="assets/coffee-slider-1.png"
+              alt="cup of frappuccino"
+            />
+            <p class="coffee-name">S’mores Frappuccino</p>
+            <p class="coffee-description">
+              This new drink takes an espresso and mixes it with brown sugar and
+              cinnamon before being topped with oat milk.
+            </p>
+            <p class="coffee-price">$5.50</p>
+          </div>
+          <!-- <div class="favorite__slider--slide slide--2"></div>
+          <div class="favorite__slider--slide slide--3"></div> -->
+          <div class="squares">
+            <div class="square active-square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+        <div class="favorite__slider--btns">
+          <button class="favorite__slider--btns-btn slider-left">
+            <img src="assets/button-icon-dark.svg" />
+          </button>
+          <button class="favorite__slider--btns-btn slider-right">
+            <img src="assets/button-icon-dark.svg" />
+          </button>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery-title">
+          Resource is the <span>perfect and cozy place</span> where you can
+          enjoy a variety of hot beverages, relax, catch up with friends, or get
+          some work done.
+        </h2>
+        <div class="photo-gallery">
+          <figure class="gallery-item image-one">
+            <img src="assets/about-1.jpg" alt="gallery image" />
+          </figure>
+          <figure class="gallery-item image-two">
+            <img src="assets/about-3.jpg" alt="gallery image" />
+          </figure>
+          <figure class="gallery-item image-three">
+            <img src="assets/about-2.jpg" alt="gallery image" />
+          </figure>
+          <figure class="gallery-item image-four">
+            <img src="assets/about-4.jpg" alt="gallery image" />
+          </figure>
+        </div>
+      </section>
+      <section class="app">
+        <div class="app-content">
+          <h2 class="app-title">
+            <span>Download</span> our apps to start ordering
+          </h2>
+          <p class="app-description">
+            Download the Resource app today and experience the comfort of
+            ordering your favorite coffee from wherever you are
+          </p>
+          <div>
+            <button class="app-store">apple</button>
+            <button class="google-pay">google</button>
+          </div>
+        </div>
+        <img src="assets/mobile-screens.png" alt="mobile screen images" />
+      </section>
+    </main>
+    <footer class="container footer">
+      <div class="footer-container">
+        <div class="footer-wrap">
+          <h2 class="footer-title">
+            Sip, Savor, Smile. <span>It’s coffee time!</span>
+          </h2>
+          <div class="footer-icons">
+            <p>icons</p>
+            <p>icons</p>
+            <p>icons</p>
+          </div>
+        </div>
+        <div class="footer-wrap">
+          <h3 class="footer-contact-title">contact us</h3>
+          <div class="footer-contact">
+            <p class="footer-address">8558 Green Rd., LA</p>
+            <p class="footer-number">+1 (603) 555-0123</p>
+            <p class="footer-time">Mon-Sat: 9:00 AM – 23:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
