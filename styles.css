@@ -13,7 +13,8 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: #e1d4c9;
-  max-width: 1440px;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .container {
@@ -53,6 +54,19 @@ body {
 
 .nav-menu-btn {
   list-style: none;
+}
+.burger-menu-btn{
+  background-color: #e1d4c9;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0.3rem 0.8rem;
+  color: #403F3D;
+  box-shadow: none;
+  font-size: 2.5rem;
+}
+
+.burger-menu-btn{
+  display: none;
 }
 
 /* hero section */
@@ -351,6 +365,7 @@ tr:hover img.info-societe {
   line-height: 24px;
   color: #403f3d;
 }
+
 
 /* footer */
 
