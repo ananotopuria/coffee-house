@@ -41,9 +41,35 @@
           src="assets/coffee-cup.png"
           alt="icon"
       /></a>
-      <button class="burger-menu-btn">
-        <ion-icon name="reorder-two-outline"></ion-icon>
-      </button>
+      <div class="navigation hidden burger-menu-btn">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Favourite coffee</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Movile app</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contact us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="menu.html" class="navigation__link"
+                >Menu
+                <img class="coffee-icon" src="assets/coffee-cup.png" alt="icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <section class="section-hero">
@@ -153,7 +179,11 @@
             </button>
           </div>
         </div>
-        <img class="mobile-screens" src="assets/mobile-screens.png" alt="mobile screen images" />
+        <img
+          class="mobile-screens"
+          src="assets/mobile-screens.png"
+          alt="mobile screen images"
+        />
       </section>
     </main>
     <footer class="container footer">
