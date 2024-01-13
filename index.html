@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/slider.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="queries.css" />
     <title>Coffee House</title>
@@ -111,13 +113,37 @@
             </p>
             <p class="coffee-price">$5.50</p>
           </div>
-          <!-- <div class="favorite__slider--slide slide--2"></div>
-          <div class="favorite__slider--slide slide--3"></div> -->
-          <div class="squares">
-            <div class="square active-square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+          <div class="favorite__slider--slide slide--2">
+            <img
+              class="coffee-image"
+              src="assets/coffee-slider-2.png"
+              alt="cup of macchiato"
+            />
+            <p class="coffee-name">Caramel Macchiato</p>
+            <p class="coffee-description">
+              Fragrant and unique classic espresso with rich caramel-peanut
+              syrup, with cream under whipped thick foam.
+            </p>
+            <p class="coffee-price">$5.00</p>
           </div>
+          <div class="favorite__slider--slide slide--3">
+            <img
+              class="coffee-image"
+              src="assets/coffee-slider-3.png"
+              alt="cup of ice coffee"
+            />
+            <p class="coffee-name">Ice coffee</p>
+            <p class="coffee-description">
+              A popular summer drink that tones and invigorates. Prepared from
+              coffee, milk and ice.
+            </p>
+            <p class="coffee-price">$4.50</p>
+          </div>
+        </div>
+        <div class="squares">
+          <div class="square active-square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
         </div>
         <div class="favorite__slider--btns">
           <button class="favorite__slider--btns-btn slider-left">

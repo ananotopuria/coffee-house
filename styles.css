@@ -55,17 +55,17 @@ body {
 .nav-menu-btn {
   list-style: none;
 }
-.burger-menu-btn{
+.burger-menu-btn {
   background-color: #e1d4c9;
   border-radius: 100px;
   text-align: center;
   padding: 0.3rem 0.8rem;
-  color: #403F3D;
+  color: #403f3d;
   box-shadow: none;
   font-size: 2.5rem;
 }
 
-.burger-menu-btn{
+.burger-menu-btn {
   display: none;
 }
 
@@ -114,13 +114,6 @@ body {
   width: 90%;
 }
 
-/* .hero-menu-btn {
-  background-color: #e1d4c9;
-  width: 20rem;
-  border-radius: 10rem;
-  padding: 2rem 7rem;
-  cursor: pointer;
-} */
 .coffee-b-i {
   display: none;
 }
@@ -142,18 +135,6 @@ body {
   height: 1rem;
 }
 
-/* tr {
-  cursor: pointer;
-}
-
-tr img.info-societe {
-  display: none;
-}
-
-tr:hover img.info-societe {
-  display: inline-block;
-} */
-
 /*  favorite section*/
 
 .favorite {
@@ -161,7 +142,7 @@ tr:hover img.info-societe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 4rem;
   position: relative;
 }
@@ -172,6 +153,10 @@ tr:hover img.info-societe {
 .menu-title {
   font-size: 6rem;
   color: #403f3d;
+  
+}
+.favorite-title{
+  align-self: center;
 }
 
 .favorite__slider {
@@ -209,14 +194,44 @@ tr:hover img.info-societe {
   align-items: center;
   gap: 2rem;
   width: 48rem;
+
 }
+.favorite{
+  width: 100vw;
+  height: 100vh;
+}
+.favorite__slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.favorite__slider--slide {
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  /* top: 0; */
+  /* background-size: cover;
+  background-position: center bottom; */
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  transition: transform 0.5s ease-in-out;
+}
+
 .favorite__slider--btns {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   top: 20vw;
 }
 .favorite__slider--btns-btn {
@@ -231,7 +246,7 @@ tr:hover img.info-societe {
 }
 
 .squares {
-  margin-top: 4rem;
+  margin-top: 70rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -366,7 +381,6 @@ tr:hover img.info-societe {
   color: #403f3d;
 }
 
-
 /* footer */
 
 .footer {
@@ -375,7 +389,7 @@ tr:hover img.info-societe {
   margin-top: 10rem;
   margin-bottom: 4rem;
 }
-.footer-title{
+.footer-title {
   font-size: 5.5rem;
 }
 
@@ -493,13 +507,12 @@ tr:hover img.info-societe {
   justify-self: flex-end;
 }
 
-.coffee-card img{
+.coffee-card img {
   display: block;
   transition: all 0.4s;
   transform: scale(1.1);
   height: 30rem;
 }
-.coffee-card:hover img{
+.coffee-card:hover img {
   transform: scale(1);
 }
-
