@@ -735,88 +735,31 @@ const dessertData = [
   },
 ];
 
-
-// function createCard(container, item) {
-//   const card = document.createElement('div');
-//   card.classList.add(`${container}-card`);
-
-//   const img = document.createElement('img');
-//   img.src = `assets/${item.name.toLowerCase().replace(/\s/g, '-')}.jpg`;
-//   img.alt = item.name;
-//   img.classList.add('card-img');
-
-//   const contentDiv = document.createElement('div');
-//   contentDiv.classList.add(`${container}-card-content`);
-
-//   const titleP = document.createElement('p');
-//   titleP.classList.add('card-title');
-//   titleP.textContent = item.name;
-
-//   const descriptionP = document.createElement('p');
-//   descriptionP.classList.add('card-description');
-//   descriptionP.textContent = item.description;
-
-//   const priceP = document.createElement('p');
-//   priceP.classList.add('card-price');
-//   priceP.textContent = `$${item.price}`;
-
-//   contentDiv.appendChild(img);
-//   contentDiv.appendChild(titleP);
-//   contentDiv.appendChild(descriptionP);
-//   contentDiv.appendChild(priceP);
-
-//   card.appendChild(contentDiv);
-
-//   document.getElementById(`${container}Content`).appendChild(card);
-// }
-
-// function showTab(tabNumber) {
-//   document.querySelectorAll('.products__tab').forEach(tab => tab.classList.remove('products__tab--active'));
-//   document.querySelectorAll('.products__content').forEach(content => content.classList.remove('products__content--active'));
-
-//   document.querySelector(`.products__tab--${tabNumber}`).classList.add('products__tab--active');
-//   document.querySelector(`.products__content--${tabNumber}`).classList.add('products__content--active');
-// }
-
-// coffeeData.forEach(coffee => createCard('coffee', coffee));
-// teaData.forEach(tea => createCard('tea', tea));
-// dessertData.forEach(dessert => createCard('dessert', dessert));
-
-// // Initial display
-// showTab(1);
-
-// // Event listeners for tabs
-// document.querySelectorAll('.products__tab').forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     const tabNumber = tab.getAttribute('data-tab');
-//     showTab(tabNumber);
-//   });
-// });
-
 function createCard(container, item) {
-  const card = document.createElement('div');
+  const card = document.createElement("div");
   card.classList.add(`${container}-card`);
 
-  const img = document.createElement('img');
-  img.src = `assets/${item.name.toLowerCase().replace(/\s/g, '-')}.jpg`;
-console.log(`Image path: assets/${item.name.toLowerCase().replace(/\s/g, '-')}.jpg`);
-  // img.src = `assets/${item.name.toLowerCase().replace(/\s/g, '-')}.jpg`;
+  const img = document.createElement("img");
+  img.src = `assets/${item.name.toLowerCase().replace(/\s/g, "-")}.jpg`;
+  console.log(
+    `Image path: assets/${item.name.toLowerCase().replace(/\s/g, "-")}.jpg`
+  );
   img.alt = item.name;
-  img.classList.add('card-img');
+  img.classList.add("card-img");
 
-  const contentDiv = document.createElement('div');
+  const contentDiv = document.createElement("div");
   contentDiv.classList.add(`${container}-card-content`);
 
-  const titleP = document.createElement('p');
-  titleP.classList.add('card-title');
+  const titleP = document.createElement("p");
+  titleP.classList.add("card-title");
   titleP.textContent = item.name;
 
-  const descriptionP = document.createElement('p');
-  descriptionP.classList.add('card-description');
+  const descriptionP = document.createElement("p");
+  descriptionP.classList.add("card-description");
   descriptionP.textContent = item.description;
 
-  const priceP = document.createElement('p');
-  priceP.classList.add('card-price');
+  const priceP = document.createElement("p");
+  priceP.classList.add("card-price");
   priceP.textContent = `$${item.price}`;
 
   contentDiv.appendChild(img);
@@ -830,24 +773,66 @@ console.log(`Image path: assets/${item.name.toLowerCase().replace(/\s/g, '-')}.j
 }
 
 function showTab(tabNumber) {
-  document.querySelectorAll('.products__tab').forEach(tab => tab.classList.remove('products__tab--active'));
-  document.querySelectorAll('.products__content').forEach(content => content.classList.remove('products__content--active'));
+  document
+    .querySelectorAll(".products__tab")
+    .forEach((tab) => tab.classList.remove("products__tab--active"));
+  document
+    .querySelectorAll(".products__content")
+    .forEach((content) =>
+      content.classList.remove("products__content--active")
+    );
 
-  document.querySelector(`.products__tab--${tabNumber}`).classList.add('products__tab--active');
-  document.querySelector(`.products__content--${tabNumber}`).classList.add('products__content--active');
+  document
+    .querySelector(`.products__tab--${tabNumber}`)
+    .classList.add("products__tab--active");
+  document
+    .querySelector(`.products__content--${tabNumber}`)
+    .classList.add("products__content--active");
 }
 
-coffeeData.forEach(coffee => createCard('coffee', coffee));
-teaData.forEach(tea => createCard('tea', tea));
-dessertData.forEach(dessert => createCard('dessert', dessert));
+coffeeData.forEach((coffee) => createCard("coffee", coffee));
+teaData.forEach((tea) => createCard("tea", tea));
+dessertData.forEach((dessert) => createCard("dessert", dessert));
 
-// Initial display
 showTab(1);
 
-// Event listeners for tabs
-document.querySelectorAll('.products__tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    const tabNumber = tab.getAttribute('data-tab');
+document.querySelectorAll(".products__tab").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const tabNumber = tab.getAttribute("data-tab");
     showTab(tabNumber);
   });
 });
+
+const openModalWindow = function () {
+  const modal = document.querySelector(`.modal`);
+  const overlayy = document.querySelector(`.overlayy`);
+  const openModal = document.querySelectorAll(`.coffee-card`);
+  for (let i = 0; i < openModal.length; i++) {
+    openModal[i].addEventListener(`click`, function () {
+      modal.classList.remove(`hidden`);
+      overlayy.classList.remove(`hidden`);
+    });
+  }
+};
+
+const closeModalWindow = function () {
+  const modal = document.querySelector(`.modal`);
+  const overlayy = document.querySelector(`.overlayy`);
+  const btnClose = document.querySelector(`.close-modal`);
+  btnClose.addEventListener(`click`, function () {
+    modal.classList.add(`hidden`);
+    overlayy.classList.add(`hidden`);
+  });
+};
+const overlayModal = function () {
+  const modal = document.querySelector(`.modal`);
+  const overlayy = document.querySelector(`.overlayy`);
+  overlayy.addEventListener(`click`, function () {
+    modal.classList.add(`hidden`);
+    overlayy.classList.add(`hidden`);
+  });
+};
+
+openModalWindow();
+closeModalWindow();
+overlayModal();
