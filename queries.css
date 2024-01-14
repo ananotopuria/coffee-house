@@ -218,27 +218,10 @@
     transform: rotate(-135deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.products__content--active {
+  grid-template-columns: 1fr 1fr;
+ 
+}
 
 
 }
@@ -294,5 +277,9 @@
     grid-template-columns: 1fr;
     grid-templete-row: auto;
     justify-items: center;
+  }
+  .products__content--active {
+    grid-template-columns: 1fr;
+   
   }
 }
